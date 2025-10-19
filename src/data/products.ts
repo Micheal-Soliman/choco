@@ -1,0 +1,136 @@
+export interface Product {
+  id: string;
+  name: string;
+  collection: 'KAI' | 'MOANA';
+  chocolateType: string;
+  weight: string;
+  reviews: number;
+  story: string;
+  ingredients: string;
+  allergens: string;
+  image?: string;
+}
+
+export const products: Product[] = [
+  {
+    id: 'shrimp-maca',
+    name: 'Shrimp Maca',
+    collection: 'KAI',
+    chocolateType: 'MILK',
+    weight: '100 g',
+    reviews: 6,
+    story: 'A bold creation where fine chocolate wraps a rich filling of crispy shrimp and smooth macadamia cream. This unique blend offers a perfect balance of crunch and creaminess, turning every bite into an unforgettable tropical adventure.',
+    ingredients: 'This bar is handcrafted with smooth milk chocolate, crunchy macadamia, and real shrimp.',
+    allergens: 'Contains milk, macadamia nuts, shrimp, and soy. May contain traces of other nuts.',
+  },
+  {
+    id: 'lobster-maca',
+    name: 'Lobster Maca',
+    collection: 'KAI',
+    chocolateType: 'MILK / DARK',
+    weight: '100 g',
+    reviews: 6,
+    story: 'An indulgent masterpiece where rich chocolate envelopes luxurious lobster and silky macadamia cream. Each bite reveals layers of oceanic elegance and buttery sweetness, offering a rare taste of island sophistication — bold, creamy, and truly unforgettable.',
+    ingredients: 'This bar is crafted with creamy milk chocolate, crunchy macadamia nuts, and real lobster.',
+    allergens: 'Contains milk, macadamia nuts, lobster, and soy. May contain traces of other nuts.',
+  },
+  {
+    id: 'crab-maca',
+    name: 'Crab Maca',
+    collection: 'KAI',
+    chocolateType: 'MILK / DARK',
+    weight: '100 g',
+    reviews: 6,
+    story: 'A daring fusion where smooth chocolate embraces crispy crab and velvety macadamia cream. The sweetness of the chocolate meets the ocean\'s delicate depth, creating a bold harmony of crunch and cream — refined, intriguing, and irresistibly tropical.',
+    ingredients: 'This bar is crafted with creamy milk chocolate, crunchy macadamia nuts, and real crab.',
+    allergens: 'Contains milk, macadamia nuts, crab, and soy. May contain traces of other nuts.',
+  },
+  {
+    id: 'samango',
+    name: 'Samango',
+    collection: 'MOANA',
+    chocolateType: 'MILK',
+    weight: '100 g',
+    reviews: 6,
+    story: 'A luxurious fusion of creamy milk chocolate and premium Norwegian salmon, combined with tropical fruits — mango, passion fruit, and lime — delicately blended with basil and macadamia cream. This elegant bar offers a perfect balance of rich, creamy, and vibrant flavors, naturally packed with nutrients to uplift the senses and energize the body.',
+    ingredients: 'This bar is crafted with creamy milk chocolate, crisp salmon, sweet mango, passion fruit, lime, basil, and smooth macadamia cream.',
+    allergens: 'Contains milk, macadamia nuts, salmon, and soy. May contain traces of other nuts.',
+  },
+  {
+    id: 'mai-tai',
+    name: 'Mai Tai',
+    collection: 'MOANA',
+    chocolateType: 'MILK',
+    weight: '100 g',
+    reviews: 6,
+    story: 'A daring tropical fusion where smooth milk chocolate wraps a rich filling of crispy shrimp, almond cream, and natural Mai Tai flavor — this bold combination offers a perfect balance of crunch, creaminess, and vibrant tropical zest, creating a refreshing, energizing, and adventurous treat that captures the essence of Hawaii\'s iconic cocktail in every bite.',
+    ingredients: 'This bar is crafted with creamy chocolate, crunchy Almond nut, pineapple, lime, and orange fruits, and real shrimp.',
+    allergens: 'Contains milk, Almond nuts, shrimp, and soy. May contain traces of other nuts.',
+  },
+  {
+    id: 'lilikoi',
+    name: 'Lilikoi',
+    collection: 'MOANA',
+    chocolateType: 'MILK',
+    weight: '100 g',
+    reviews: 6,
+    story: 'A celebration of Hawaii\'s golden fruit — Lilikoi. Smooth milk chocolate embraces a lavish filling of crispy lobster folded in luscious Lilikoi butter, with crunchy almond pieces adding a tropical sparkle. A bold encounter of fruit, sea, and silk — vibrant, exotic, and irresistibly Hawaiian.',
+    ingredients: 'This bar is crafted with creamy milk chocolate, crunchy almond nut, and real lobster.',
+    allergens: 'Contains milk, Almond nuts, lobster, and soy. May contain traces of other nuts.',
+  },
+  {
+    id: 'hawaiian-hibiscus',
+    name: 'Hawaiian Hibiscus',
+    collection: 'MOANA',
+    chocolateType: 'RUBY',
+    weight: '100 g',
+    reviews: 6,
+    story: 'A graceful fusion of Ruby chocolate enveloping a rich filling of crispy crab, almond cream infused with Hawaiian hibiscus, and sweet blueberries. This unique bar offers a perfect balance of crunch, creaminess, and vibrant tropical flavor, naturally packed with vitamin C to brighten the senses and uplift the mood.',
+    ingredients: 'This bar is crafted with creamy Ruby chocolate, crisp crab, delicate Hawaiian hibiscus, blueberries and smooth almond cream.',
+    allergens: 'Contains milk, almonds, crab, and soy. May contain traces of other nuts.',
+  },
+  {
+    id: 'hawaii-acai',
+    name: 'Hawaii Acai',
+    collection: 'MOANA',
+    chocolateType: 'RUBY',
+    weight: '100 g',
+    reviews: 6,
+    story: 'A vibrant fusion of Ruby chocolate enveloping a rich filling of crispy shrimp, almond cream, and Acai with tropical fruits — banana, strawberry, blueberry, and mango. This bold bar offers a perfect balance of crunch, creaminess, and fruity zest, creating a refreshing, energizing, and unforgettable tropical experience.',
+    ingredients: 'This bar is crafted with creamy Ruby chocolate, crunchy Almond nut, banana, strawberry, blueberry, and mango fruits, and real shrimp.',
+    allergens: 'Contains milk, Almond nuts, shrimp, and soy. May contain traces of other nuts.',
+  },
+  {
+    id: 'haupia',
+    name: 'Haupia',
+    collection: 'MOANA',
+    chocolateType: 'WHITE',
+    weight: '100 g',
+    reviews: 6,
+    story: 'Dive into tropical indulgence with silky white chocolate embracing a luscious filling of crispy crab, crunchy almond pieces, and rich haupia cream made with creamy coconut milk — a smooth, island-inspired delight that melts in every bite.',
+    ingredients: 'This bar is crafted with creamy white chocolate, crunchy Almond nut, and real crab.',
+    allergens: 'Contains milk, Almond nuts, crab, and soy. May contain traces of other nuts.',
+  },
+  {
+    id: 'avosaku',
+    name: 'Avosaku',
+    collection: 'MOANA',
+    chocolateType: 'MILK',
+    weight: '100 g',
+    reviews: 6,
+    story: 'A refined creation where silky milk chocolate envelops a luxurious filling of crispy Saku tuna, pistachio cream, avocado, basil, and a hint of fresh lemon — a perfect harmony of creaminess, nuttiness, and coastal freshness that embodies Hawaii\'s bold, modern spirit.',
+    ingredients: 'This bar is crafted with creamy milk chocolate, crunchy pistachio nut, and real Saku tuna.',
+    allergens: 'Contains milk, pistachio nuts, tuna, and soy. May contain traces of other nuts.',
+  },
+  {
+    id: 'aloha-elvis',
+    name: 'Aloha Elvis',
+    collection: 'MOANA',
+    chocolateType: 'MILK',
+    weight: '100 g',
+    reviews: 6,
+    story: 'A tribute to Elvis Presley. Inspired by the King\'s legendary love affair with Hawaii, this bar hits all the right notes — silky milk chocolate enveloping a daring fusion of creamy peanut butter, crispy shrimp for a delicate crunch, banana, and honey. A bold symphony of tropical sweetness and rich, nutty depth — pure rock \'n\' roll indulgence from the islands.',
+    ingredients: 'This bar is crafted with creamy milk chocolate, crunchy peanut, and real shrimp.',
+    allergens: 'Contains milk, peanut, shrimp, and soy. May contain traces of other nuts.',
+  },
+];

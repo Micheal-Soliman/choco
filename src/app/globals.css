@@ -1,42 +1,70 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    background: #fafafa;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #3d2817;
+    background: #fefdfb;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #5a3d2d;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+@layer components {
+  .btn-primary {
+    @apply bg-chocolate-800 text-cream-50 px-8 py-4 rounded-none font-medium tracking-wide uppercase text-sm hover:bg-chocolate-900 transition-all duration-300 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-chocolate-800 text-chocolate-800 px-8 py-4 rounded-none font-medium tracking-wide uppercase text-sm hover:bg-chocolate-800 hover:text-cream-50 transition-all duration-300;
+  }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  .luxury-heading {
+    @apply font-['Playfair_Display'] text-chocolate-900 tracking-tight;
+  }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+  .luxury-subheading {
+    @apply font-['Cormorant_Garamond'] text-chocolate-700 tracking-wide;
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  .product-card-luxury {
+    @apply bg-white shadow-sm hover:shadow-2xl transition-all duration-500 cursor-pointer;
+  }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  .section-padding {
+    @apply py-24 md:py-32;
   }
 }
