@@ -192,7 +192,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="section-padding bg-gray-900 text-white border-b-8 border-chocolate-700">
+      <section className="section-padding bg-gray-900 text-white border-b-4 border-chocolate-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="luxury-heading text-5xl md:text-6xl mb-8">
             Start Your WikiWiki Adventure
@@ -206,10 +206,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Decorative Separator */}
-      <div className="max-w-4xl mx-auto px-4">
-        <div className="bg-chocolate-600 h-1 rounded-full"></div>
-      </div>
+
     </div>
   );
 }

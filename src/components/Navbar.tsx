@@ -13,11 +13,9 @@ export default function Navbar() {
     <>
       {/* Top Bar */}
       <div className="bg-gray-900 text-white text-xs py-2">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <p className="font-light tracking-wide">FREE SHIPPING ON ORDERS OVER $100</p>
-          <div className="flex gap-4">
-            <Link href="/contact" className="hover:text-gray-300 transition-colors">Contact</Link>
-            <Link href="/faqs" className="hover:text-gray-300 transition-colors">FAQs</Link>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
+            <p className="font-light tracking-wide text-center sm:text-left text-[10px] sm:text-xs">FREE SHIPPING ON ORDERS OVER $100</p>
           </div>
         </div>
       </div>

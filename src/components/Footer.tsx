@@ -20,22 +20,22 @@ export default function Footer() {
         {/* Newsletter */}
         <div className="mb-12 pb-12 border-b border-gray-800">
           <div className="max-w-2xl mx-auto text-center">
-            <h3 className="luxury-heading text-3xl mb-4">Stay Connected</h3>
-            <p className="text-gray-400 mb-6">
+            <h3 className="luxury-heading text-2xl md:text-3xl mb-4">Stay Connected</h3>
+            <p className="text-gray-400 mb-6 text-sm md:text-base px-4">
               Subscribe to receive updates on new products, exclusive offers, and chocolate inspiration
             </p>
-            <form onSubmit={handleSubscribe} className="flex gap-4 max-w-md mx-auto">
+            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-md mx-auto px-4">
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 required
-                className="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-white"
+                className="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-white text-sm"
               />
               <button
                 type="submit"
-                className="px-8 py-3 bg-white text-gray-900 font-medium tracking-wide uppercase text-sm hover:bg-gray-200 transition-colors"
+                className="px-6 sm:px-8 py-3 bg-white text-gray-900 font-medium tracking-wide uppercase text-xs sm:text-sm hover:bg-gray-200 transition-colors whitespace-nowrap"
               >
                 {subscribed ? '✓ Subscribed' : 'Subscribe'}
               </button>

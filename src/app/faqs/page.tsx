@@ -117,7 +117,7 @@ export default function FAQsPage() {
               <div className="space-y-4">
                 {faqs
                   .filter(faq => faq.category === category)
-                  .map((faq, index) => {
+                  .map((faq) => {
                     const globalIndex = faqs.indexOf(faq);
                     const isOpen = openIndex === globalIndex;
                     

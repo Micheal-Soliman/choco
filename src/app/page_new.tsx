@@ -19,7 +19,7 @@ export default function Home() {
           </h1>
           <div className="w-24 h-0.5 bg-white mx-auto mb-8"></div>
           <p className="luxury-subheading text-2xl md:text-3xl mb-6 text-gray-200">
-            World's First Seafood Chocolate Collection
+            World&apos;s First Seafood Chocolate Collection
           </p>
           <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto text-gray-300 leading-relaxed">
             A groundbreaking fusion where the treasures of the sea meet the finest chocolate craftsmanship
@@ -68,7 +68,7 @@ export default function Home() {
             <div className="flex items-center justify-center gap-3">
               <Award className="text-gray-900" size={24} />
               <div>
-                <p className="text-sm font-medium text-gray-900">World's First</p>
+                <p className="text-sm font-medium text-gray-900">World&apos;s First</p>
                 <p className="text-xs text-gray-500">Seafood Chocolate</p>
               </div>
             </div>
@@ -90,7 +90,7 @@ export default function Home() {
                 Born from years of groundbreaking research and unwavering commitment to create something truly unprecedented.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                WikiWiki represents the world's first successful transformation of premium seafood into exquisite chocolate. Each bar is a testament to scientific innovation, culinary artistry, and the bold spirit of Hawaii.
+                WikiWiki represents the world&apos;s first successful transformation of premium seafood into exquisite chocolate. Each bar is a testament to scientific innovation, culinary artistry, and the bold spirit of Hawaii.
               </p>
               <Link href="/our-story" className="inline-flex items-center text-sm font-medium tracking-wide uppercase text-gray-900 hover:text-gray-600 transition-colors">
                 Discover Our Story
@@ -118,7 +118,7 @@ export default function Home() {
           </h2>
           <div className="w-16 h-0.5 bg-gray-900 mx-auto mb-8"></div>
           <p className="luxury-subheading text-xl text-gray-700 leading-relaxed">
-            Each collection is a world of its own — where the treasures of the sea meet the sweetness of the earth, and Hawaii's vibrant spirit shines through every detail.
+            Each collection is a world of its own — where the treasures of the sea meet the sweetness of the earth, and Hawaii&apos;s vibrant spirit shines through every detail.
           </p>
         </div>
       </section>
@@ -131,7 +131,7 @@ export default function Home() {
             <h2 className="luxury-heading text-6xl md:text-7xl mb-6">KAI</h2>
             <div className="w-16 h-0.5 bg-white mx-auto mb-8"></div>
             <p className="luxury-subheading text-2xl text-gray-300 max-w-3xl mx-auto">
-              Indulge in the sea's treasures, transformed into an exquisite chocolate experience
+              Indulge in the sea&apos;s treasures, transformed into an exquisite chocolate experience
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -155,7 +155,7 @@ export default function Home() {
             <h2 className="luxury-heading text-6xl md:text-7xl mb-6 text-gray-900">MOANA</h2>
             <div className="w-16 h-0.5 bg-gray-900 mx-auto mb-8"></div>
             <p className="luxury-subheading text-2xl text-gray-700 max-w-3xl mx-auto">
-              Savor the ocean's bounty, where tropical fruits and nut creams unite in chocolate perfection
+              Savor the ocean&apos;s bounty, where tropical fruits and nut creams unite in chocolate perfection
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">

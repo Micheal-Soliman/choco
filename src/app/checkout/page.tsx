@@ -6,7 +6,7 @@ import { ShoppingBag, CreditCard, Lock } from 'lucide-react';
 import { useState } from 'react';
 
 export default function CheckoutPage() {
-  const { cart, cartTotal, cartCount } = useCart();
+  const { cart, cartTotal } = useCart();
   const [step, setStep] = useState(1);
 
   if (cart.length === 0) {
